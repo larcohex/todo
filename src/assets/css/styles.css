@@ -1,0 +1,82 @@
+@import "~normalize.css";
+
+:root {
+  --primary-color: #63b3ed;
+  --secondary-color: #2b6cb0;
+  --white: #fff;
+  --black: #000;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  opacity: 0.5;
+  transition: opacity 500ms ease-out;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  opacity: 1;
+}
+
+.button:active {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button_light {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.button_light:active {
+  background-color: var(--white);
+  color: var(--secondary-color);
+}
+
+.label {
+  margin-right: 0.5rem;
+}
+
+.text-input {
+  border: 1px solid var(--black);
+  border-radius: 2px;
+}
+
+.textarea {
+  resize: none;
+  border: 1px solid var(--black);
+  border-radius: 2px;
+}
